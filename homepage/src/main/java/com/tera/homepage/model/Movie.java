@@ -11,10 +11,10 @@ public class Movie extends Media{
     private List<String> directors;
 
     @Builder
-    public Movie(Integer id, String title, String description, MediaAsset mediaAsset, LocalDateTime startTime, LocalDateTime expiredTime, List<String> actors, List<String> directors) {
-        super(id, title, description, mediaAsset, startTime, expiredTime);
+
+    public Movie(Integer id, String title, String description, MediaAsset mediaAsset, LocalDateTime startTime, LocalDateTime expiredTime, MediaType mediaType, List<String> actors, List<String> directors) {
+        super(id, title, description, mediaAsset, startTime, expiredTime, mediaType);
         this.actors = actors;
         this.directors = directors;
     }
-
 }
