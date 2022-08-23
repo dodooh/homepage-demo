@@ -30,18 +30,18 @@ public class GraphQLController {
         return mediaService.findItemById(itemQuery.getId());
     }
 
-    @BatchMapping
-    Map<Item, MediaAsset> mediaAsset(Item item) {
-        Map<Item, MediaAsset> mediaAssetMap = new HashMap<>();
-        mediaAssetMap.put(item, this.mediaAssetService.findMediaAssetByItemId(item.getId()));
-        return mediaAssetMap;
-    }
-
-    @BatchMapping
-    Map<Item, LinkPlay> linkPlay(Item item, ItemQuery itemQuery) {
-        Map<Item, LinkPlay> linkPlay = new HashMap<>();
-        linkPlay.put(item, this.linkPlayService.findLinkPlayByItemIdAndPlatfom(itemQuery.getId(), itemQuery.getPlatform()));
-        return linkPlay;
-    }
+//    @BatchMapping
+//    Map<Item, MediaAsset> mediaAsset(Item item) {
+//        Map<Item, MediaAsset> mediaAssetMap = new HashMap<>();
+//        mediaAssetMap.put(item, this.mediaAssetService.findMediaAssetByItemId(item.getId()));
+//        return mediaAssetMap;
+//    }
+//
+//    @BatchMapping
+//    Map<Item, LinkPlay> linkPlay(Item item, ItemQuery itemQuery) {
+//        Map<Item, LinkPlay> linkPlay = new HashMap<>();
+//        linkPlay.put(item, this.linkPlayService.findLinkPlayByItemIdAndPlatfom(itemQuery.getId(), itemQuery.getPlatform()));
+//        return linkPlay;
+//    }
 
 }

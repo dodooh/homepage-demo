@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDateTime;
-import java.util.List;
+
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -20,5 +20,6 @@ public class Media {
     private LocalDateTime expiredTime;
     private String title;
     private String description;
+    private MediaAsset mediaAsset;
 
 }
