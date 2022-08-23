@@ -19,5 +19,5 @@ public class Media {
     private MediaAsset mediaAsset;
     private LocalDateTime startTime;
     private LocalDateTime expiredTime;
-
+    private MediaType mediaType;
 }

@@ -10,8 +10,8 @@ import java.time.LocalDateTime;
 public class Sport extends Media{
     private String player;
    @Builder
-    public Sport(Integer id, String title, String description, MediaAsset mediaAsset, LocalDateTime startTime, LocalDateTime expiredTime, String player) {
-        super(id, title, description, mediaAsset, startTime, expiredTime);
+    public Sport(Integer id, String title, String description, MediaAsset mediaAsset, LocalDateTime startTime, LocalDateTime expiredTime, MediaType mediaType, String player) {
+        super(id, title, description, mediaAsset, startTime, expiredTime, mediaType);
         this.player = player;
     }
 }
