@@ -1,6 +1,5 @@
 package com.tera.homepage.model;
 
-
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -13,7 +12,7 @@ import java.util.List;
 @AllArgsConstructor
 @Getter
 @Setter
-public class Media {
+public class Item {
     private Integer id;
     private String title;
     private String description;
@@ -21,4 +20,11 @@ public class Media {
     private LocalDateTime startTime;
     private LocalDateTime expiredTime;
     private MediaType mediaType;
+    private List<LinkPlay> linkPlay;
+
+    private List<String> actors;
+    private List<String> directors;
+    private Integer channelId;
+    private String player;
+
 }
