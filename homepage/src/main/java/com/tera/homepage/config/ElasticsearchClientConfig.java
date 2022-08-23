@@ -12,10 +12,6 @@ import org.springframework.data.elasticsearch.client.RestClients;
 import org.springframework.data.elasticsearch.config.AbstractElasticsearchConfiguration;
 import org.springframework.data.elasticsearch.repository.config.EnableElasticsearchRepositories;
 
-/**
- * @author Pratik Das
- *
- */
 @Configuration
 @EnableElasticsearchRepositories(basePackages = "com.tera.homepage.repository")
 @ComponentScan(basePackages = { "com.tera.homepage" })
