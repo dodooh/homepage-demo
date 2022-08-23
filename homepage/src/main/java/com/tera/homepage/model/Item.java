@@ -10,6 +10,7 @@ import org.springframework.data.cassandra.core.mapping.Column;
 import org.springframework.data.cassandra.core.mapping.PrimaryKeyColumn;
 import org.springframework.data.cassandra.core.mapping.Table;
 
+
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -48,4 +49,5 @@ public class Item {
 
     @Column("players")
     private List<String> player;
+
 }

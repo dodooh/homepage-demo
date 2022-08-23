@@ -29,4 +29,6 @@ public class InputItem {
     private List<String> directors;
     private Integer channelId;
     private String player;
+
 }
+

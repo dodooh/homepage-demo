@@ -1,0 +1,40 @@
+[
+  {
+    "id": 1,
+    "mediaType": "MOVIE",
+    "title": "Thương ngày nắng về",
+    "description": "test sample",
+    "mediaAsset": {
+      "id": 1,
+      "bannerUrl": "sample.com/banner.png",
+      "posterUrl": "sample.com/posterUrl.png",
+      "thumbnailUrl": "sample.com/thumbnailUrl.png"
+    },
+    "startTime": "2022-08-20T01:00:00.001",
+    "expiredTime": "2022-08-25T01:00:00.001",
+    "linkPlay": [
+      {
+        "id": 9001,
+        "url": "sample.com/linkPlayHLSIOS01.mp4",
+        "platform": "IOS"
+      },
+      {
+        "id": 9002,
+        "url": "sample.com/linkPlayAndroidDASH01.mp4",
+        "platform": "ANDROID"
+      }
+    ],
+    "actors": [
+      "Tường Vi",
+      "Hoài An",
+      "Đào Anh Tuấn",
+      "Hứa Minh Đạt",
+      "Hùng Phạm"
+    ],
+    "directors": [
+      "Khương Thịnh"
+    ],
+    "channelId": null,
+    "player": null
+  }
+]
