@@ -5,6 +5,7 @@ import com.tera.homepage.model.MediaType;
 import com.tera.homepage.model.Movie;
 import org.elasticsearch.index.query.QueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
+import org.elasticsearch.index.query.QueryStringQueryBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.data.domain.PageRequest;
@@ -33,14 +34,16 @@ public class SearchService {
 
 
     public List<Media> fetchAllMediaByType(MediaType mediaType) {
-        QueryBuilder queryBuilder = QueryBuilders.termQuery("mediaType", mediaType.toString());
+        QueryBuilder filterExpiredTimeMedia = QueryBuilders.rangeQuery("expiredTime").gte("now");
+        QueryBuilder termQueryByMediaType = QueryBuilders.termQuery("mediaType", mediaType.toString());
+        QueryBuilder mainQueryBuilder = QueryBuilders.boolQuery().filter(filterExpiredTimeMedia).must(termQueryByMediaType);
         Query searchQuery = new NativeSearchQueryBuilder()
-                .withFilter(queryBuilder)
+                .withFilter(mainQueryBuilder)
                 .withPageable(PageRequest.of(0, 10)).build();
         SearchHits<Media> searchHits = elasticsearchOperations.search(searchQuery, Media.class, IndexCoordinates.of(HOMEPAGE_INDEX));
-        List<Media> moviesMatch = new ArrayList<>();
-        searchHits.forEach(item -> moviesMatch.add(item.getContent()));
+        List<Media> mediaMatches = new ArrayList<>();
+        searchHits.forEach(item -> mediaMatches.add(item.getContent()));
 
-        return moviesMatch;
+        return mediaMatches;
     }
 }
