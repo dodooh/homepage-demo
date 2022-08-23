@@ -31,4 +31,3 @@ public class InputItem {
     private String player;
 
 }
-
