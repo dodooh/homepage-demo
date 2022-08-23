@@ -15,10 +15,10 @@ import java.util.List;
 @Setter
 public class Media {
     private Integer id;
-    private String title;
-    private String description;
-    private MediaAsset mediaAsset;
+    private MediaType mediaType;
     private LocalDateTime startTime;
     private LocalDateTime expiredTime;
-    private MediaType mediaType;
+    private String title;
+    private String description;
+
 }
