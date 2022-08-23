@@ -59,20 +59,6 @@ input LinkPlayInput{
     platform: Platform
 }
 
-input Item{
-    id: ID!
-    mediaType: MediaType
-    startTime: String
-    expiredTime: String
-    title: String
-    description: String
-    mediaAsset: MediaAssetInput
-    linkPlay: LinkPlayInput
-    players: [String]
-    channelId: Int
-    actors:[String]
-    directors: [String]
-}
 input InputItem{
     id: ID!
     platform: Platform!

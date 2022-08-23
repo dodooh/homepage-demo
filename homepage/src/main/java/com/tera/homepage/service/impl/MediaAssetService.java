@@ -5,7 +5,9 @@ import com.tera.homepage.model.MediaAsset;
 import com.tera.homepage.repository.MediaAssetRepository;
 import com.tera.homepage.service.IMediaAssetService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
 public class MediaAssetService implements IMediaAssetService {
     @Autowired
     private MediaAssetRepository mediaAssetRepository;

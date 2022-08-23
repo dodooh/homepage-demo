@@ -19,5 +19,6 @@ public class Media {
     private LocalDateTime expiredTime;
     private String title;
     private String description;
+    private MediaAsset mediaAsset;
 
 }

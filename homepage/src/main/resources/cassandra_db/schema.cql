@@ -3,8 +3,8 @@ USE homepage;
 
 CREATE TABLE link_play
 (
-    id       BIGINT,
-    item_id BIGINT,
+    id       INT,
+    item_id INT,
     url      TEXT,
     platform TEXT,
     PRIMARY KEY((id,item_id,platform))
@@ -12,8 +12,8 @@ CREATE TABLE link_play
 
 CREATE TABLE media_asset
 (
-    id            BIGINT,
-    item_id      BIGINT,
+    id            INT,
+    item_id      INT,
     banner_url    TEXT,
     poster_url    TEXT,
     thumbnail_url TEXT,
@@ -22,8 +22,8 @@ CREATE TABLE media_asset
 
 CREATE TABLE items
 (
-    id           bigint,
-    mediaType    TEXT,
+    id           INT,
+    media_type    TEXT,
     start_time   TIMESTAMP,
     expired_time TIMESTAMP,
     title        TEXT,
@@ -31,6 +31,6 @@ CREATE TABLE items
     actors       LIST<TEXT>,
     directors    LIST<TEXT>,
     players      LIST<TEXT>,
-    channel_id   BIGINT,
-    PRIMARY KEY((id,mediaType),start_time,expired_time)
+    channel_id   INT,
+    PRIMARY KEY((id,media_type),start_time,expired_time)
 ) WITH CLUSTERING ORDER BY (start_time DESC , expired_time ASC);
