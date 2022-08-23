@@ -2,6 +2,11 @@ package com.tera.homepage.model;
 
 
 import lombok.*;
+import org.springframework.data.cassandra.core.cql.Ordering;
+import org.springframework.data.cassandra.core.cql.PrimaryKeyType;
+import org.springframework.data.cassandra.core.mapping.Column;
+import org.springframework.data.cassandra.core.mapping.PrimaryKey;
+import org.springframework.data.cassandra.core.mapping.PrimaryKeyColumn;
 import org.springframework.data.elasticsearch.annotations.Setting;
 
 import java.time.LocalDateTime;
@@ -14,10 +19,10 @@ import java.util.Set;
 @Setter
 public class Media {
     private Integer id;
-    private String title;
-    private String description;
-    private MediaAsset mediaAsset;
+    private MediaType mediaType;
     private LocalDateTime startTime;
     private LocalDateTime expiredTime;
-    private MediaType mediaType;
+    private String title;
+    private String description;
+
 }
