@@ -28,5 +28,6 @@ public class InputItem {
     private List<String> actors;
     private List<String> directors;
     private Integer channelId;
-    private String player;
+    private List<String> player;
+
 }

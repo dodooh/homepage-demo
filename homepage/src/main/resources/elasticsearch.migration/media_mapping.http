@@ -1,4 +1,5 @@
-PUT {{spring.elasticsearch.uris}}/media
+PUT http://localhost:9200/media
+Content-Type: application/json
 
 {
   "settings": {

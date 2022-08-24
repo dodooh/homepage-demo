@@ -16,11 +16,6 @@ public class MediaService implements IMediaService {
     private ItemRepository itemRepository;
 
     @Override
-    public Item findItemById(Integer id) {
-        return this.itemRepository.findById(id).orElse(null);
-    }
-
-    @Override
     public void createNewItem(InputItem inputItem) {
         Item item = new Item();
         BeanUtils.copyProperties(inputItem,item);

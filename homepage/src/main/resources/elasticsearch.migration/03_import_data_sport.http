@@ -1,0 +1,361 @@
+POST http://localhost:8080/api/consumer
+Content-Type: application/json
+
+{
+  "id": 21,
+  "mediaType": "SPORT",
+  "title": "Chung Kết - B. Coric vs S. Tsitsipas",
+  "description": "test sample",
+  "mediaAsset": {
+    "id": 21,
+    "bannerUrl": "sample.com/banner21.png",
+    "posterUrl": "sample.com/posterUrl21.png",
+    "thumbnailUrl": "sample.com/thumbnailUrl21.png"
+  },
+  "startTime": "2022-08-20T01:00:00.001",
+  "expiredTime": "2022-08-29T01:00:00.001",
+  "linkPlay": [
+    {
+      "id": 9041,
+      "url": "sample.com/linkPlayIOS21.mp4",
+      "platform": "IOS"
+    },
+    {
+      "id": 9042,
+      "url": "sample.com/linkPlayAndroid21.mp4",
+      "platform": "ANDROID"
+    }
+  ],
+  "actors": null,
+  "directors":  null,
+  "channelId": null,
+  "player": ["S. Tsitsipas", "B. Coric"]
+}
+###
+POST http://localhost:8080/api/consumer
+Content-Type: application/json
+
+{
+  "id": 22,
+  "mediaType": "SPORT",
+  "title": "Bán Kết - U15 Sông Lam Nghệ An - U15 Hoàng Anh Gia Lai",
+  "description": "test sample",
+  "mediaAsset": {
+    "id": 22,
+    "bannerUrl": "sample.com/banner22.png",
+    "posterUrl": "sample.com/posterUrl22.png",
+    "thumbnailUrl": "sample.com/thumbnailUrl22.png"
+  },
+  "startTime": "2022-08-20T01:00:00.001",
+  "expiredTime": "2022-08-29T01:00:00.001",
+  "linkPlay": [
+    {
+      "id": 9043,
+      "url": "sample.com/linkPlayIOS22.mp4",
+      "platform": "IOS"
+    },
+    {
+      "id": 9044,
+      "url": "sample.com/linkPlayAndroid22.mp4",
+      "platform": "ANDROID"
+    }
+  ],
+  "actors": null,
+  "directors": null,
+  "channelId": null,
+  "player": [
+    "Sông Lam Nghệ An",
+    "Hoàng Anh Gia Lai"
+  ]
+}
+###
+POST http://localhost:8080/api/consumer
+Content-Type: application/json
+
+{
+  "id": 23,
+  "mediaType": "SPORT",
+  "title": "Hậu vệ Trần Đình Hoàng trở lại Sông Lam Nghệ An",
+  "description": "test sample",
+  "mediaAsset": {
+    "id": 23,
+    "bannerUrl": "sample.com/banner23.png",
+    "posterUrl": "sample.com/posterUrl23.png",
+    "thumbnailUrl": "sample.com/thumbnailUrl23.png"
+  },
+  "startTime": "2022-08-20T01:00:00.001",
+  "expiredTime": "2022-08-29T01:00:00.001",
+  "linkPlay": [
+    {
+      "id": 9045,
+      "url": "sample.com/linkPlayIOS23.mp4",
+      "platform": "IOS"
+    },
+    {
+      "id": 9046,
+      "url": "sample.com/linkPlayAndroid23.mp4",
+      "platform": "ANDROID"
+    }
+  ],
+  "actors": null,
+  "directors": null,
+  "channelId": null,
+  "player": [
+    "Trần Đình Hoàng",
+    "Sông Lam Nghệ An"
+  ]
+}
+###
+POST http://localhost:8080/api/consumer
+Content-Type: application/json
+
+{
+  "id": 24,
+  "mediaType": "SPORT",
+  "title": "Bán Kết - U15 Huế - U15 PVF",
+  "description": "test sample",
+  "mediaAsset": {
+    "id": 24,
+    "bannerUrl": "sample.com/banner24.png",
+    "posterUrl": "sample.com/posterUrl24.png",
+    "thumbnailUrl": "sample.com/thumbnailUrl24.png"
+  },
+  "startTime": "2022-08-20T01:00:00.001",
+  "expiredTime": "2022-08-29T01:00:00.001",
+  "linkPlay": [
+    {
+      "id": 9047,
+      "url": "sample.com/linkPlayIOS24.mp4",
+      "platform": "IOS"
+    },
+    {
+      "id": 9048,
+      "url": "sample.com/linkPlayAndroid24.mp4",
+      "platform": "ANDROID"
+    }
+  ],
+  "actors": null,
+  "directors": null,
+  "channelId": null,
+  "player": [
+    "U15 Huế",
+    "U15 PVF"
+  ]
+}
+###
+POST http://localhost:8080/api/consumer
+Content-Type: application/json
+
+{
+  "id": 25,
+  "mediaType": "SPORT",
+  "title": "VCK U15 Cúp QG: PVF bị HAGL cầm hoà",
+  "description": "test sample",
+  "mediaAsset": {
+    "id": 25,
+    "bannerUrl": "sample.com/banner25.png",
+    "posterUrl": "sample.com/posterUrl25.png",
+    "thumbnailUrl": "sample.com/thumbnailUrl25.png"
+  },
+  "startTime": "2022-08-20T01:00:00.001",
+  "expiredTime": "2022-08-29T01:00:00.001",
+  "linkPlay": [
+    {
+      "id": 9049,
+      "url": "sample.com/linkPlayIOS25.mp4",
+      "platform": "IOS"
+    },
+    {
+      "id": 9050,
+      "url": "sample.com/linkPlayAndroid25.mp4",
+      "platform": "ANDROID"
+    }
+  ],
+  "actors": null,
+  "directors": null,
+  "channelId": null,
+  "player": [
+    "U15 HAGL",
+    "U15 PVF"
+  ]
+}
+###
+POST http://localhost:8080/api/consumer
+Content-Type: application/json
+
+{
+  "id": 26,
+  "mediaType": "SPORT",
+  "title": "Eric Bailly Chuẩn Bị Cấp Bến Marseille",
+  "description": "test sample",
+  "mediaAsset": {
+    "id": 26,
+    "bannerUrl": "sample.com/banner26.png",
+    "posterUrl": "sample.com/posterUrl26.png",
+    "thumbnailUrl": "sample.com/thumbnailUrl26.png"
+  },
+  "startTime": "2022-08-20T01:00:00.001",
+  "expiredTime": "2022-08-29T01:00:00.001",
+  "linkPlay": [
+    {
+      "id": 9051,
+      "url": "sample.com/linkPlayIOS26.mp4",
+      "platform": "IOS"
+    },
+    {
+      "id": 9052,
+      "url": "sample.com/linkPlayAndroid26.mp4",
+      "platform": "ANDROID"
+    }
+  ],
+  "actors": null,
+  "directors":  null,
+  "channelId": null,
+  "player": ["Eric Bailly", "Marseille"]
+}
+###
+POST http://localhost:8080/api/consumer
+Content-Type: application/json
+
+{
+  "id": 27,
+  "mediaType": "SPORT",
+  "title": "Mazraoui chuẩn bị cập bến Bayern Munich",
+  "description": "test sample",
+  "mediaAsset": {
+    "id": 27,
+    "bannerUrl": "sample.com/banner27.png",
+    "posterUrl": "sample.com/posterUrl27.png",
+    "thumbnailUrl": "sample.com/thumbnailUrl27.png"
+  },
+  "startTime": "2022-08-20T01:00:00.001",
+  "expiredTime": "2022-08-29T01:00:00.001",
+  "linkPlay": [
+    {
+      "id": 9053,
+      "url": "sample.com/linkPlayIOS27.mp4",
+      "platform": "IOS"
+    },
+    {
+      "id": 9054,
+      "url": "sample.com/linkPlayAndroid27.mp4",
+      "platform": "ANDROID"
+    }
+  ],
+  "actors": null,
+  "directors": null,
+  "channelId": null,
+  "player": [
+    "Mazraoui",
+    "Bayern Munich"
+  ]
+}
+###
+POST http://localhost:8080/api/consumer
+Content-Type: application/json
+
+{
+  "id": 28,
+  "mediaType": "SPORT",
+  "title": "Jorge Mendes Tìm Cách Đưa Ronaldo Sang Đức",
+  "description": "test sample",
+  "mediaAsset": {
+    "id": 28,
+    "bannerUrl": "sample.com/banner28.png",
+    "posterUrl": "sample.com/posterUrl28.png",
+    "thumbnailUrl": "sample.com/thumbnailUrl28.png"
+  },
+  "startTime": "2022-08-20T01:00:00.001",
+  "expiredTime": "2022-08-29T01:00:00.001",
+  "linkPlay": [
+    {
+      "id": 9055,
+      "url": "sample.com/linkPlayIOS28.mp4",
+      "platform": "IOS"
+    },
+    {
+      "id": 9056,
+      "url": "sample.com/linkPlayAndroid28.mp4",
+      "platform": "ANDROID"
+    }
+  ],
+  "actors": null,
+  "directors": null,
+  "channelId": null,
+  "player": [
+    "Jorge Mendes",
+    "Ronaldo"
+  ]
+}
+###
+POST http://localhost:8080/api/consumer
+Content-Type: application/json
+
+{
+  "id": 29,
+  "mediaType": "SPORT",
+  "title": "Nóng bỏng cuộc đua giữa Đức và Na Uy - Olympic mùa đông 2022",
+  "description": "test sample",
+  "mediaAsset": {
+    "id": 29,
+    "bannerUrl": "sample.com/banner29.png",
+    "posterUrl": "sample.com/posterUrl29.png",
+    "thumbnailUrl": "sample.com/thumbnailUrl29.png"
+  },
+  "startTime": "2022-08-20T01:00:00.001",
+  "expiredTime": "2022-08-29T01:00:00.001",
+  "linkPlay": [
+    {
+      "id": 9057,
+      "url": "sample.com/linkPlayIOS29.mp4",
+      "platform": "IOS"
+    },
+    {
+      "id": 9058,
+      "url": "sample.com/linkPlayAndroid29.mp4",
+      "platform": "ANDROID"
+    }
+  ],
+  "actors": null,
+  "directors": null,
+  "channelId": null,
+  "player": [
+    "Đức",
+    "Na Uy"
+  ]
+}
+###
+POST http://localhost:8080/api/consumer
+Content-Type: application/json
+
+{
+  "id": 30,
+  "mediaType": "SPORT",
+  "title": "Cuộc chạm trán đầy hứa hẹn giữa Hermansson và Strickland",
+  "description": "test sample",
+  "mediaAsset": {
+    "id": 30,
+    "bannerUrl": "sample.com/banner30.png",
+    "posterUrl": "sample.com/posterUrl30.png",
+    "thumbnailUrl": "sample.com/thumbnailUrl30.png"
+  },
+  "startTime": "2022-08-20T01:00:00.001",
+  "expiredTime": "2022-08-29T01:00:00.001",
+  "linkPlay": [
+    {
+      "id": 9059,
+      "url": "sample.com/linkPlayIOS30.mp4",
+      "platform": "IOS"
+    },
+    {
+      "id": 9060,
+      "url": "sample.com/linkPlayAndroid30.mp4",
+      "platform": "ANDROID"
+    }
+  ],
+  "actors": null,
+  "directors":  null,
+  "channelId": null,
+  "player": ["Hermansson", "Strickland"]
+}
+

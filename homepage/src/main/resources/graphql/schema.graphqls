@@ -37,7 +37,7 @@ type Item{
     mediaAsset: MediaAsset
     actors:[String]
     directors: [String]
-    players: [String]
+    player: [String]
     channelId: Int
     linkPlay: LinkPlay
 }
