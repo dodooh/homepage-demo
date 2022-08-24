@@ -2,8 +2,6 @@ package com.tera.homepage.repository.impl;
 
 import co.elastic.clients.elasticsearch.ElasticsearchClient;
 import co.elastic.clients.elasticsearch._types.Result;
-import co.elastic.clients.elasticsearch._types.query_dsl.Query;
-import co.elastic.clients.elasticsearch._types.query_dsl.RangeQuery;
 import co.elastic.clients.elasticsearch.core.IndexRequest;
 import co.elastic.clients.elasticsearch.core.IndexResponse;
 import co.elastic.clients.elasticsearch.core.SearchRequest;
@@ -48,9 +46,6 @@ public class ElasticsearchIndexRepositoryImpl implements ElasticsearchIndexRepos
     @Override
     public List<Media> findMediaByMediaType(MediaType mediaType) {
         List<Media> result = new ArrayList<>();
-        Query filterExpired = RangeQuery.of(m -> m
-                .field("expiredtime")
-                .gte(JsonData.of("now")))._toQuery();
         SearchRequest request = SearchRequest.of(s -> s
                 .query(q -> q
                         .bool(b -> b

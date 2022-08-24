@@ -1,0 +1,389 @@
+POST http://localhost:8080/api/consumer
+Content-Type: application/json
+
+  {
+    "id": 1,
+    "mediaType": "MOVIE",
+    "title": "Thương ngày nắng về",
+    "description": "test sample",
+    "mediaAsset": {
+      "id": 1,
+      "bannerUrl": "sample.com/banner.png",
+      "posterUrl": "sample.com/posterUrl.png",
+      "thumbnailUrl": "sample.com/thumbnailUrl.png"
+    },
+    "startTime": "2022-08-20T01:00:00.001",
+    "expiredTime": "2022-08-25T01:00:00.001",
+    "linkPlay": [
+      {
+        "id": 9001,
+        "url": "sample.com/linkPlayHLSIOS01.mp4",
+        "platform": "IOS"
+      },
+      {
+        "id": 9002,
+        "url": "sample.com/linkPlayAndroidDASH01.mp4",
+        "platform": "ANDROID"
+      }
+    ],
+    "actors": [
+      "Tường Vi",
+      "Hoài An",
+      "Đào Anh Tuấn",
+      "Hứa Minh Đạt",
+      "Hùng Phạm"
+    ],
+    "directors": [
+      "Khương Thịnh"
+    ],
+    "channelId": null,
+    "player": null
+  }
+###
+POST http://localhost:8080/api/consumer
+Content-Type: application/json
+
+{
+  "id": 2,
+  "mediaType": "MOVIE",
+  "title": "Chồng cũ, vợ cũ, người yêu cũ",
+  "description": "test sample",
+  "mediaAsset": {
+    "id": 2,
+    "bannerUrl": "sample.com/banner02.png",
+    "posterUrl": "sample.com/posterUrl02.png",
+    "thumbnailUrl": "sample.com/thumbnailUrl02.png"
+  },
+  "startTime": "2022-08-20T01:00:00.001",
+  "expiredTime": "2022-08-29T01:00:00.001",
+  "linkPlay": [
+    {
+      "id": 9003,
+      "url": "sample.com/linkPlayHLSIOS02.mp4",
+      "platform": "IOS"
+    },
+    {
+      "id": 9004,
+      "url": "sample.com/linkPlayAndroidDASH02.mp4",
+      "platform": "ANDROID"
+    }
+  ],
+  "actors": [
+    "Lã Thanh Huyền", "Việt Anh"
+  ],
+  "directors": [
+    "Khương Thịnh"
+  ],
+  "channelId": null,
+  "player": null
+}
+###
+POST http://localhost:8080/api/consumer
+Content-Type: application/json
+
+{
+  "id": 3,
+  "mediaType": "MOVIE",
+  "title": "Bão ngầm",
+  "description": "test sample",
+  "mediaAsset": {
+    "id": 3,
+    "bannerUrl": "sample.com/banner.png",
+    "posterUrl": "sample.com/posterUrl.png",
+    "thumbnailUrl": "sample.com/thumbnailUrl.png"
+  },
+  "startTime": "2022-08-20T01:00:00.001",
+  "expiredTime": "2022-08-29T01:00:00.001",
+  "linkPlay": [
+    {
+      "id": 9005,
+      "url": "sample.com/linkPlayIOS03.mp4",
+      "platform": "IOS"
+    },
+    {
+      "id": 9006,
+      "url": "sample.com/linkPlayAndroid03.mp4",
+      "platform": "ANDROID"
+    }
+  ],
+  "actors": [
+    "Cao Thái Hà",
+    "NSND Nguyễn Hải",
+    "NSND Trần Nhượng"
+  ],
+  "directors": [
+    "Thanh Trúc"
+  ],
+  "channelId": null,
+  "player": null
+}
+###
+POST http://localhost:8080/api/consumer
+Content-Type: application/json
+
+{
+  "id": 4,
+  "mediaType": "MOVIE",
+  "title": "Trà táo đỏ (Phần 2)",
+  "description": "test sample",
+  "mediaAsset": {
+    "id": 3,
+    "bannerUrl": "sample.com/banner.png",
+    "posterUrl": "sample.com/posterUrl.png",
+    "thumbnailUrl": "sample.com/thumbnailUrl.png"
+  },
+  "startTime": "2022-08-20T01:00:00.001",
+  "expiredTime": "2022-08-29T01:00:00.001",
+  "linkPlay": [
+    {
+      "id": 9007,
+      "url": "sample.com/linkPlayIOS04.mp4",
+      "platform": "IOS"
+    },
+    {
+      "id": 9007,
+      "url": "sample.com/linkPlayAndroid04.mp4",
+      "platform": "ANDROID"
+    }
+  ],
+  "actors": [
+    "Quý Bình", "Hà Trí Quang", "Thanh Hiền", "Ngân Quỳnh"
+  ],
+  "directors": [
+    "Tuấn Tú"
+  ],
+  "channelId": null,
+  "player": null
+}
+###
+POST http://localhost:8080/api/consumer
+Content-Type: application/json
+
+{
+  "id": 5,
+  "mediaType": "MOVIE",
+  "title": "Anh có phải đàn ông không?",
+  "description": "test sample",
+  "mediaAsset": {
+    "id": 5,
+    "bannerUrl": "sample.com/banner05.png",
+    "posterUrl": "sample.com/posterUrl05.png",
+    "thumbnailUrl": "sample.com/thumbnailUrl05.png"
+  },
+  "startTime": "2022-08-20T01:00:00.001",
+  "expiredTime": "2022-08-29T01:00:00.001",
+  "linkPlay": [
+    {
+      "id": 9009,
+      "url": "sample.com/linkPlayIOS05.mp4",
+      "platform": "IOS"
+    },
+    {
+      "id": 9010,
+      "url": "sample.com/linkPlayAndroid05.mp4",
+      "platform": "ANDROID"
+    }
+  ],
+  "actors": [
+    "Nhan Phúc Vinh", "Hà Việt Dũng", "Thúy An", "Quỳnh Kool", "Việt Hoa"
+  ],
+  "directors": [
+    "Trọng Lân"
+  ],
+  "channelId": null,
+  "player": null
+}
+###
+POST http://localhost:8080/api/consumer
+Content-Type: application/json
+
+{
+  "id": 6,
+  "mediaType": "MOVIE",
+  "title": "Lối về miền hoa",
+  "description": "test sample",
+  "mediaAsset": {
+    "id": 6,
+    "bannerUrl": "sample.com/banner06.png",
+    "posterUrl": "sample.com/posterUrl06.png",
+    "thumbnailUrl": "sample.com/thumbnailUrl06.png"
+  },
+  "startTime": "2022-08-20T01:00:00.001",
+  "expiredTime": "2022-08-29T01:00:00.001",
+  "linkPlay": [
+    {
+      "id": 9011,
+      "url": "sample.com/linkPlayIOS06.mp4",
+      "platform": "IOS"
+    },
+    {
+      "id": 9012,
+      "url": "sample.com/linkPlayAndroid06.mp4",
+      "platform": "ANDROID"
+    }
+  ],
+  "actors": [
+    "Lâm Đức Anh", "Mạnh Quân", "Anh Đào"
+  ],
+  "directors": [
+    "Khương Thịnh"
+  ],
+  "channelId": null,
+  "player": null
+}
+###
+POST http://localhost:8080/api/consumer
+Content-Type: application/json
+
+{
+  "id": 7,
+  "mediaType": "MOVIE",
+  "title": "Lưới trời",
+  "description": "test sample",
+  "mediaAsset": {
+    "id": 7,
+    "bannerUrl": "sample.com/banner07.png",
+    "posterUrl": "sample.com/posterUrl07.png",
+    "thumbnailUrl": "sample.com/thumbnailUrl07.png"
+  },
+  "startTime": "2022-08-20T01:00:00.001",
+  "expiredTime": "2022-08-29T01:00:00.001",
+  "linkPlay": [
+    {
+      "id": 9013,
+      "url": "sample.com/linkPlayIOS07.mp4",
+      "platform": "IOS"
+    },
+    {
+      "id": 9014,
+      "url": "sample.com/linkPlayAndroid07.mp4",
+      "platform": "ANDROID"
+    }
+  ],
+  "actors": [
+    "Thân Thuý Hà", "Thanh Duy", "Bích Ngọc", "Tim", "Nhật Kim Anh"
+  ],
+  "directors": [
+    "Mai Dũng"
+  ],
+  "channelId": null,
+  "player": null
+}
+###
+POST http://localhost:8080/api/consumer
+Content-Type: application/json
+
+{
+  "id": 8,
+  "mediaType": "MOVIE",
+  "title": "Cha anh mẹ em",
+  "description": "test sample",
+  "mediaAsset": {
+    "id": 8,
+    "bannerUrl": "sample.com/banner08.png",
+    "posterUrl": "sample.com/posterUrl08.png",
+    "thumbnailUrl": "sample.com/thumbnailUrl08.png"
+  },
+  "startTime": "2022-08-20T01:00:00.001",
+  "expiredTime": "2022-08-29T01:00:00.001",
+  "linkPlay": [
+    {
+      "id": 9015,
+      "url": "sample.com/linkPlayIOS08.mp4",
+      "platform": "IOS"
+    },
+    {
+      "id": 9016,
+      "url": "sample.com/linkPlayAndroid08.mp4",
+      "platform": "ANDROID"
+    }
+  ],
+  "actors": [
+    "Ngọc Lan","Thành Thuận", "Phương Thảo", "Mỹ Linh"
+  ],
+  "directors": [
+    "Tường Vi"
+  ],
+  "channelId": null,
+  "player": null
+}
+###
+POST http://localhost:8080/api/consumer
+Content-Type: application/json
+
+{
+  "id": 9,
+  "mediaType": "MOVIE",
+  "title": "Công thức hạnh phúc",
+  "description": "test sample",
+  "mediaAsset": {
+    "id": 9,
+    "bannerUrl": "sample.com/banner09.png",
+    "posterUrl": "sample.com/posterUrl09.png",
+    "thumbnailUrl": "sample.com/thumbnailUrl09.png"
+  },
+  "startTime": "2022-08-20T01:00:00.001",
+  "expiredTime": "2022-08-29T01:00:00.001",
+  "linkPlay": [
+    {
+      "id": 9017,
+      "url": "sample.com/linkPlayIOS09.mp4",
+      "platform": "IOS"
+    },
+    {
+      "id": 9018,
+      "url": "sample.com/linkPlayAndroid09.mp4",
+      "platform": "ANDROID"
+    }
+  ],
+  "actors": [
+    "Hoài An", "Đào Anh Tuấn", "Hứa Minh Đạt", "Hùng Phạm"
+  ],
+  "directors": [
+    "Tường Vi"
+  ],
+  "channelId": null,
+  "player": null
+}
+###
+POST http://localhost:8080/api/consumer
+Content-Type: application/json
+
+{
+  "id": 10,
+  "mediaType": "MOVIE",
+  "title": "Phố trong làng",
+  "description": "test sample",
+  "mediaAsset": {
+    "id": 10,
+    "bannerUrl": "sample.com/banner10.png",
+    "posterUrl": "sample.com/posterUrl10.png",
+    "thumbnailUrl": "sample.com/thumbnailUrl10.png"
+  },
+  "startTime": "2022-08-20T01:00:00.001",
+  "expiredTime": "2022-08-29T01:00:00.001",
+  "linkPlay": [
+    {
+      "id": 9019,
+      "url": "sample.com/linkPlayIOS10.mp4",
+      "platform": "IOS"
+    },
+    {
+      "id": 9020,
+      "url": "sample.com/linkPlayAndroid10.mp4",
+      "platform": "ANDROID"
+    }
+  ],
+  "actors": [
+    "Phạm Anh Tuấn",
+    "Phạm Ngọc Anh",
+    "Phùng Đức Hiếu",
+    "Lưu Duy Khánh"
+  ],
+  "directors": [
+    "Nguyễn Mai Hiền"
+  ],
+  "channelId": null,
+  "player": null
+}
+
