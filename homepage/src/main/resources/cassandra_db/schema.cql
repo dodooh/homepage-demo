@@ -3,21 +3,19 @@ USE homepage;
 
 CREATE TABLE link_play
 (
-    id       INT,
     item_id INT,
     url      TEXT,
     platform TEXT,
-    PRIMARY KEY((id,item_id,platform))
+    PRIMARY KEY((item_id,platform))
 );
 
 CREATE TABLE media_asset
 (
-    id            INT,
     item_id      INT,
     banner_url    TEXT,
     poster_url    TEXT,
     thumbnail_url TEXT,
-    PRIMARY KEY((id,item_id))
+    PRIMARY KEY((item_id))
 );
 
 CREATE TABLE items

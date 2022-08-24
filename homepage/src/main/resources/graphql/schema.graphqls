@@ -1,14 +1,6 @@
 type Query {
     getItemById(itemQuery: InputItem): Item
-#    findActorsByMovieId(movieId: ID): [ActorByMovie]
-#    allActors: [Actor]
-#    findMovieByTitle(title: String): Movie
-    #    findActorByName(name: String): Actor
 }
-
-#type Mutation {
-#    createMovie(movie: MovieInput): NewMovie
-#}
 
 type LinkPlay{
     id: ID!
@@ -36,6 +28,7 @@ type MediaAsset{
 
 type Item{
     id: ID!
+    platform: Platform
     mediaType: MediaType
     startTime: String
     expiredTime: String
@@ -61,5 +54,6 @@ input LinkPlayInput{
 
 input InputItem{
     id: ID!
+    mediaType: MediaType
     platform: Platform!
 }

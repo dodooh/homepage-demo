@@ -8,7 +8,6 @@ import lombok.Setter;
 
 import java.time.LocalDateTime;
 
-
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
@@ -21,5 +20,6 @@ public class Media {
     private String title;
     private String description;
     private MediaAsset mediaAsset;
+
 
 }

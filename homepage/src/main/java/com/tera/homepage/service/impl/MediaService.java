@@ -2,6 +2,7 @@ package com.tera.homepage.service.impl;
 
 import com.tera.homepage.dto.InputItem;
 import com.tera.homepage.model.Item;
+import com.tera.homepage.model.MediaType;
 import com.tera.homepage.repository.ItemRepository;
 import com.tera.homepage.service.IMediaService;
 import lombok.Setter;
@@ -24,5 +25,10 @@ public class MediaService implements IMediaService {
         Item item = new Item();
         BeanUtils.copyProperties(inputItem,item);
         this.itemRepository.save(item);
+    }
+
+    @Override
+    public Item findItemByIdAndMediaType(Integer id, MediaType mediaType) {
+        return this.itemRepository.findItemByIdAndMediaType(id,mediaType);
     }
 }
