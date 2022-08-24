@@ -15,9 +15,6 @@ import org.springframework.data.cassandra.core.mapping.Table;
 @Setter
 @Table("link_play")
 public class LinkPlay{
-    @PrimaryKeyColumn(name = "id", type = PrimaryKeyType.PARTITIONED)
-    private Integer id;
-
     @PrimaryKeyColumn(name = "item_id", type = PrimaryKeyType.PARTITIONED)
     private Integer itemId;
 

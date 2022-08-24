@@ -11,12 +11,8 @@ import org.springframework.data.cassandra.core.mapping.Table;
 @AllArgsConstructor
 @Getter
 @Setter
-@Table("Media_asset")
+@Table("media_asset")
 public class MediaAsset {
-
-    @PrimaryKeyColumn(name = "id", type = PrimaryKeyType.PARTITIONED)
-    private Integer id;
-
     @PrimaryKeyColumn(name = "item_id", type = PrimaryKeyType.PARTITIONED)
     private Integer itemId;
 
