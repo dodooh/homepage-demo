@@ -8,4 +8,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface ItemRepository extends CassandraRepository<Item, Integer> {
     Item findItemByIdAndMediaType(Integer id, MediaType mediaType);
+
 }

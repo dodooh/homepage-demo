@@ -8,6 +8,7 @@ import org.springframework.boot.autoconfigure.AutoConfigurationPackage;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -23,8 +24,8 @@ public class SearchController {
         this.searchService = searchService;
     }
 
-    @GetMapping("top/movie")
-    public List<Media> fetchAllMovies() {
-        return searchService.fetchAllMediaByType(MediaType.MOVIE);
+    @GetMapping("top")
+    public List<Media> fetchAllMediaByType(@RequestParam("mediaType") MediaType mediaType) {
+        return searchService.fetchAllMediaByType(mediaType);
     }
 }
