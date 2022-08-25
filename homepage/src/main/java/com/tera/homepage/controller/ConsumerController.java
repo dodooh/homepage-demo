@@ -39,6 +39,9 @@ public class ConsumerController {
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
-
+    @DeleteMapping()
+    public ResponseEntity<?> removeExpiredItems() {
+        return null;
+    }
 
 }
