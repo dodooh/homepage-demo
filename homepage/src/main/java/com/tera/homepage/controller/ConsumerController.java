@@ -2,6 +2,7 @@ package com.tera.homepage.controller;
 
 
 import com.tera.homepage.dto.InputItem;
+import com.tera.homepage.model.Media;
 import com.tera.homepage.service.ElasticsearchIndexService;
 import com.tera.homepage.service.ILinkPlayService;
 import com.tera.homepage.service.IMediaAssetService;
@@ -10,6 +11,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 
 @RestController
@@ -40,9 +43,13 @@ public class ConsumerController {
     }
 
     @DeleteMapping()
-    public ResponseEntity<?> removeExpiredItems() {
-        System.out.println("test git");
-        return null;
+    public ResponseEntity<?> removeExpiredItemsOnElasticsearch() {
+        List<Media> expiredList = elasticsearchIndexService.getListExpiredItems();
+        //TODO : delete cassandra
+
+
+        elasticsearchIndexService.removeExpiredItems();
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 
 }

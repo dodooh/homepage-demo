@@ -1,11 +1,9 @@
 package com.tera.homepage.repository.impl;
 
 import co.elastic.clients.elasticsearch.ElasticsearchClient;
+import co.elastic.clients.elasticsearch._types.Conflicts;
 import co.elastic.clients.elasticsearch._types.Result;
-import co.elastic.clients.elasticsearch.core.IndexRequest;
-import co.elastic.clients.elasticsearch.core.IndexResponse;
-import co.elastic.clients.elasticsearch.core.SearchRequest;
-import co.elastic.clients.elasticsearch.core.SearchResponse;
+import co.elastic.clients.elasticsearch.core.*;
 import co.elastic.clients.json.JsonData;
 import com.tera.homepage.model.Media;
 import com.tera.homepage.model.MediaType;
@@ -55,6 +53,50 @@ public class ElasticsearchIndexRepositoryImpl implements ElasticsearchIndexRepos
                                 .must(m -> m
                                         .term(trm -> trm
                                                 .field("mediaType").value(mediaType.toString())))
+                        )
+                )
+        );
+        try {
+            SearchResponse<Media> response = elasticsearchClient.search(request, Media.class);
+            response.hits().hits().forEach(each -> result.add(each.source()));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        return result;
+    }
+
+    @Override
+    public void removeExpiredItems() {
+        DeleteByQueryRequest deleteByQueryRequest = DeleteByQueryRequest.of(
+                s -> s
+                        .index(INDEX)
+                        .conflicts(Conflicts.Proceed)
+                        .query(q -> q
+                                .bool(b -> b
+                                        .filter(ft -> ft
+                                                .range(r -> r
+                                                        .field("expiredTime").lte(JsonData.of("now"))))
+                                )
+                        )
+        );
+        try {
+            DeleteByQueryResponse response =  elasticsearchClient.deleteByQuery(deleteByQueryRequest);
+            System.out.println(response.deleted());
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @Override
+    public List<Media> getListExpiredItems() {
+        List<Media> result = new ArrayList<>();
+        SearchRequest request = SearchRequest.of(s -> s
+                .index(INDEX)
+                .query(q -> q
+                        .bool(b -> b
+                                .filter(ft -> ft
+                                        .range(r -> r
+                                                .field("expiredTime").lte(JsonData.of("now"))))
                         )
                 )
         );

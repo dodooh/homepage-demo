@@ -9,4 +9,8 @@ public interface ElasticsearchIndexRepository {
     boolean saveMedia(Media media);
 
     List<Media> findMediaByMediaType(MediaType mediaType);
+
+    void removeExpiredItems();
+
+    List<Media> getListExpiredItems();
 }
