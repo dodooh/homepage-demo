@@ -9,4 +9,6 @@ import org.springframework.stereotype.Repository;
 public interface ItemRepository extends CassandraRepository<Item, Integer> {
     Item findItemByIdAndMediaType(Integer id, MediaType mediaType);
 
+    void deleteItemByIdAndMediaType(Integer id, MediaType mediaType);
+
 }
