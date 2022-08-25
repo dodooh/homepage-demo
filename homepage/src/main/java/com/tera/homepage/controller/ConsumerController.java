@@ -46,7 +46,9 @@ public class ConsumerController {
     public ResponseEntity<?> removeExpiredItemsOnElasticsearch() {
         List<Media> expiredList = elasticsearchIndexService.getListExpiredItems();
         //TODO : delete cassandra
-
+        this.mediaService.removeExpiredItems(expiredList);
+        this.mediaAssetService.removeExpiredMediaAsset(expiredList);
+        this.linkPlayService.removeExpiredLinkPlay(expiredList);
 
         elasticsearchIndexService.removeExpiredItems();
         return new ResponseEntity<>(HttpStatus.OK);

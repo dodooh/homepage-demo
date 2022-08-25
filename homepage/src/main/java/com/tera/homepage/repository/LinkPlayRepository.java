@@ -6,4 +6,5 @@ import org.springframework.data.cassandra.repository.CassandraRepository;
 
 public interface LinkPlayRepository extends CassandraRepository<LinkPlay,Integer> {
     LinkPlay findLinkPlayByItemIdAndPlatform(Integer itemId, Platform platform);
+    void deleteLinkPlayByItemIdAndPlatform(Integer itemId, Platform platform);
 }
