@@ -41,6 +41,7 @@ public class ConsumerController {
 
     @DeleteMapping()
     public ResponseEntity<?> removeExpiredItems() {
+        System.out.println("test git");
         return null;
     }
 
