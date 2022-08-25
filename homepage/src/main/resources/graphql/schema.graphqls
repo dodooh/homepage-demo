@@ -1,0 +1,59 @@
+type Query {
+    getItemById(itemQuery: InputItem): Item
+}
+
+type LinkPlay{
+    id: ID!
+    itemId: Int
+    url: String
+    platform: Platform
+}
+enum Platform{
+    IOS
+    ANDROID
+}
+enum MediaType{
+    MOVIE
+    PROGRAM
+    SPORT
+}
+
+type MediaAsset{
+    id: ID!
+    mediaId: Int
+    bannerUrl: String
+    posterUrl: String
+    thumbnailUrl: String
+}
+
+type Item{
+    id: ID!
+    platform: Platform
+    mediaType: MediaType
+    startTime: String
+    expiredTime: String
+    title: String
+    description: String
+    mediaAsset: MediaAsset
+    actors:[String]
+    directors: [String]
+    player: [String]
+    channelId: Int
+    linkPlay: LinkPlay
+}
+
+input MediaAssetInput{
+    bannerUrl: String
+    posterUrl: String
+    thumbnailUrl: String
+}
+input LinkPlayInput{
+    url: String
+    platform: Platform
+}
+
+input InputItem{
+    id: ID!
+    mediaType: MediaType
+    platform: Platform!
+}

@@ -1,0 +1,340 @@
+POST http://localhost:8080/api/consumer
+Content-Type: application/json
+
+{
+  "id": 11,
+  "mediaType": "PROGRAM",
+  "title": "Chào buổi sáng",
+  "description": "test sample",
+  "mediaAsset": {
+    "id": 11,
+    "bannerUrl": "sample.com/banner11.png",
+    "posterUrl": "sample.com/posterUrl11.png",
+    "thumbnailUrl": "sample.com/thumbnailUrl11.png"
+  },
+  "startTime": "2022-08-20T01:00:00.001",
+  "expiredTime": "2022-08-29T01:00:00.001",
+  "linkPlay": [
+    {
+      "id": 9021,
+      "url": "sample.com/linkPlayIOS11.mp4",
+      "platform": "IOS"
+    },
+    {
+      "id": 9022,
+      "url": "sample.com/linkPlayAndroid11.mp4",
+      "platform": "ANDROID"
+    }
+  ],
+  "actors": null,
+  "directors":  null,
+  "channelId": 222333011,
+  "player": null
+}
+###
+POST http://localhost:8080/api/consumer
+Content-Type: application/json
+
+{
+    "id": 12,
+    "mediaType": "PROGRAM",
+    "title": "Chuyển động 24h",
+    "description": "test sample",
+    "mediaAsset": {
+        "id": 12,
+        "bannerUrl": "sample.com/banner12.png",
+        "posterUrl": "sample.com/posterUrl12.png",
+        "thumbnailUrl": "sample.com/thumbnailUrl12.png"
+    },
+    "startTime": "2022-08-20T01:00:00.001",
+    "expiredTime": "2022-08-29T01:00:00.001",
+    "linkPlay": [
+        {
+            "id": 9023,
+            "url": "sample.com/linkPlayIOS12.mp4",
+            "platform": "IOS"
+        },
+        {
+            "id": 9024,
+            "url": "sample.com/linkPlayAndroid12.mp4",
+            "platform": "ANDROID"
+        }
+    ],
+    "actors": null,
+    "directors":  null,
+    "channelId": 222333012,
+    "player": null
+}
+###
+POST http://localhost:8080/api/consumer
+Content-Type: application/json
+
+{
+  "id": 13,
+  "mediaType": "PROGRAM",
+  "title": "Con đường âm nhạc",
+  "description": "test sample",
+  "mediaAsset": {
+    "id": 13,
+    "bannerUrl": "sample.com/banner13.png",
+    "posterUrl": "sample.com/posterUrl13.png",
+    "thumbnailUrl": "sample.com/thumbnailUrl13.png"
+  },
+  "startTime": "2022-08-20T01:00:00.001",
+  "expiredTime": "2022-08-29T01:00:00.001",
+  "linkPlay": [
+    {
+      "id": 9025,
+      "url": "sample.com/linkPlayIOS13.mp4",
+      "platform": "IOS"
+    },
+    {
+      "id": 9026,
+      "url": "sample.com/linkPlayAndroid13.mp4",
+      "platform": "ANDROID"
+    }
+  ],
+  "actors": null,
+  "directors": null,
+  "channelId": 222333013,
+  "player": null
+}
+###
+POST http://localhost:8080/api/consumer
+Content-Type: application/json
+
+{
+  "id": 14,
+  "mediaType": "PROGRAM",
+  "title": "Người đương thời",
+  "description": "test sample",
+  "mediaAsset": {
+    "id": 14,
+    "bannerUrl": "sample.com/banner14.png",
+    "posterUrl": "sample.com/posterUrl14.png",
+    "thumbnailUrl": "sample.com/thumbnailUrl14.png"
+  },
+  "startTime": "2022-08-20T01:00:00.001",
+  "expiredTime": "2022-08-29T01:00:00.001",
+  "linkPlay": [
+    {
+      "id": 9027,
+      "url": "sample.com/linkPlayIOS14.mp4",
+      "platform": "IOS"
+    },
+    {
+      "id": 9028,
+      "url": "sample.com/linkPlayAndroid14.mp4",
+      "platform": "ANDROID"
+    }
+  ],
+  "actors": null,
+  "directors": null,
+  "channelId": 222333014,
+  "player": null
+}
+###
+POST http://localhost:8080/api/consumer
+Content-Type: application/json
+
+{
+  "id": 15,
+  "mediaType": "PROGRAM",
+  "title": "Bạn của nhà nông",
+  "description": "test sample",
+  "mediaAsset": {
+    "id": 15,
+    "bannerUrl": "sample.com/banner15.png",
+    "posterUrl": "sample.com/posterUrl15.png",
+    "thumbnailUrl": "sample.com/thumbnailUrl15.png"
+  },
+  "startTime": "2022-08-20T01:00:00.001",
+  "expiredTime": "2022-08-29T01:00:00.001",
+  "linkPlay": [
+    {
+      "id": 9029,
+      "url": "sample.com/linkPlayIOS15.mp4",
+      "platform": "IOS"
+    },
+    {
+      "id": 9030,
+      "url": "sample.com/linkPlayAndroid15.mp4",
+      "platform": "ANDROID"
+    }
+  ],
+  "actors": null,
+  "directors": null,
+  "channelId": 222333015,
+  "player": null
+}
+###
+POST http://localhost:8080/api/consumer
+Content-Type: application/json
+
+{
+  "id": 16,
+  "mediaType": "PROGRAM",
+  "title": "Công nghệ 360",
+  "description": "test sample",
+  "mediaAsset": {
+    "id": 16,
+    "bannerUrl": "sample.com/banner16.png",
+    "posterUrl": "sample.com/posterUrl16.png",
+    "thumbnailUrl": "sample.com/thumbnailUrl16.png"
+  },
+  "startTime": "2022-08-20T01:00:00.001",
+  "expiredTime": "2022-08-29T01:00:00.001",
+  "linkPlay": [
+    {
+      "id": 9031,
+      "url": "sample.com/linkPlayIOS16.mp4",
+      "platform": "IOS"
+    },
+    {
+      "id": 9032,
+      "url": "sample.com/linkPlayAndroid16.mp4",
+      "platform": "ANDROID"
+    }
+  ],
+  "actors": null,
+  "directors": null,
+  "channelId": 222333016,
+  "player": null
+}
+###
+POST http://localhost:8080/api/consumer
+Content-Type: application/json
+
+{
+  "id": 17,
+  "mediaType": "PROGRAM",
+  "title": "Hành trình khám phá",
+  "description": "test sample",
+  "mediaAsset": {
+    "id": 17,
+    "bannerUrl": "sample.com/banner17.png",
+    "posterUrl": "sample.com/posterUrl17.png",
+    "thumbnailUrl": "sample.com/thumbnailUrl17.png"
+  },
+  "startTime": "2022-08-20T01:00:00.001",
+  "expiredTime": "2022-08-29T01:00:00.001",
+  "linkPlay": [
+    {
+      "id": 9033,
+      "url": "sample.com/linkPlayIOS17.mp4",
+      "platform": "IOS"
+    },
+    {
+      "id": 9034,
+      "url": "sample.com/linkPlayAndroid17.mp4",
+      "platform": "ANDROID"
+    }
+  ],
+  "actors": null,
+  "directors": null,
+  "channelId": 222333017,
+  "player": null
+}
+###
+POST http://localhost:8080/api/consumer
+Content-Type: application/json
+
+{
+  "id": 18,
+  "mediaType": "PROGRAM",
+  "title": "Môi trường và cuộc sống",
+  "description": "test sample",
+  "mediaAsset": {
+    "id": 18,
+    "bannerUrl": "sample.com/banner18.png",
+    "posterUrl": "sample.com/posterUrl18.png",
+    "thumbnailUrl": "sample.com/thumbnailUrl18.png"
+  },
+  "startTime": "2022-08-20T01:00:00.001",
+  "expiredTime": "2022-08-29T01:00:00.001",
+  "linkPlay": [
+    {
+      "id": 9035,
+      "url": "sample.com/linkPlayIOS18.mp4",
+      "platform": "IOS"
+    },
+    {
+      "id": 9036,
+      "url": "sample.com/linkPlayAndroid18.mp4",
+      "platform": "ANDROID"
+    }
+  ],
+  "actors": null,
+  "directors": null,
+  "channelId": 222333018,
+  "player": null
+}
+###
+POST http://localhost:8080/api/consumer
+Content-Type: application/json
+
+{
+  "id": 19,
+  "mediaType": "PROGRAM",
+  "title": "Từ những miền quê",
+  "description": "test sample",
+  "mediaAsset": {
+    "id": 19,
+    "bannerUrl": "sample.com/banner19.png",
+    "posterUrl": "sample.com/posterUrl19.png",
+    "thumbnailUrl": "sample.com/thumbnailUrl19.png"
+  },
+  "startTime": "2022-08-20T01:00:00.001",
+  "expiredTime": "2022-08-29T01:00:00.001",
+  "linkPlay": [
+    {
+      "id": 9037,
+      "url": "sample.com/linkPlayIOS19.mp4",
+      "platform": "IOS"
+    },
+    {
+      "id": 9038,
+      "url": "sample.com/linkPlayAndroid19.mp4",
+      "platform": "ANDROID"
+    }
+  ],
+  "actors": null,
+  "directors":  null,
+  "channelId": 222333019,
+  "player": null
+}
+###
+POST http://localhost:8080/api/consumer
+Content-Type: application/json
+
+{
+  "id": 20,
+  "mediaType": "PROGRAM",
+  "title": "Nhật ký người Việt",
+  "description": "test sample",
+  "mediaAsset": {
+    "id": 20,
+    "bannerUrl": "sample.com/banner20.png",
+    "posterUrl": "sample.com/posterUrl20.png",
+    "thumbnailUrl": "sample.com/thumbnailUrl20.png"
+  },
+  "startTime": "2022-08-20T01:00:00.001",
+  "expiredTime": "2022-08-29T01:00:00.001",
+  "linkPlay": [
+    {
+      "id": 9039,
+      "url": "sample.com/linkPlayIOS20.mp4",
+      "platform": "IOS"
+    },
+    {
+      "id": 9040,
+      "url": "sample.com/linkPlayAndroid20.mp4",
+      "platform": "ANDROID"
+    }
+  ],
+  "actors": null,
+  "directors": null,
+  "channelId": 222333020,
+  "player": null
+}
+

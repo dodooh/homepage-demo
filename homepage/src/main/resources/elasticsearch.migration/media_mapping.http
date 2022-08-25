@@ -1,0 +1,75 @@
+PUT http://localhost:9200/media
+Content-Type: application/json
+
+{
+  "settings": {
+    "analysis": {
+      "filter": {
+        "autocomplete_filter": {
+          "type": "edge_ngram",
+          "min_gram": 3,
+          "max_gram": 20
+        }
+      },
+      "analyzer": {
+        "my_vi_analyzer": {
+          "tokenizer": "vi_tokenizer",
+          "char_filter": [
+            "html_strip"
+          ],
+          "filter": [
+            "icu_folding",
+            "lowercase"
+          ]
+        }
+      }
+    }
+  },
+  "mappings": {
+    "properties": {
+      "id": {
+        "type": "integer"
+      },
+      "mediaType": {
+        "type": "keyword"
+      },
+      "title": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword"
+          }
+        },
+        "analyzer": "my_vi_analyzer"
+      },
+      "description": {
+        "type": "text",
+        "analyzer": "my_vi_analyzer"
+      },
+      "mediaAsset": {
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "bannerUrl": {
+            "type": "text"
+          },
+          "posterUrl": {
+            "type": "text"
+          },
+          "thumbnailUrl": {
+            "type": "text"
+          }
+        }
+      },
+      "startTime": {
+        "type": "date",
+        "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS||yyyy/MM/dd||epoch_millis"
+      },
+      "expiredTime": {
+        "type": "date",
+        "format" : "yyyy-MM-dd'T'HH:mm:ss.SSS||yyyy/MM/dd||epoch_millis"
+      }
+    }
+  }
+}
