@@ -4,17 +4,13 @@ import com.tera.homepage.model.Media;
 import com.tera.homepage.model.MediaType;
 import com.tera.homepage.service.SearchService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.AutoConfigurationPackage;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
 @RequestMapping("api/homepage")
+@CrossOrigin
 public class SearchController {
 
     private SearchService searchService;
