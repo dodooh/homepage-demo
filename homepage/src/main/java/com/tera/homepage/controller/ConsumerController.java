@@ -2,22 +2,10 @@ package com.tera.homepage.controller;
 
 
 import com.tera.homepage.dto.InputItem;
-
 import com.tera.homepage.service.ElasticsearchIndexService;
 import com.tera.homepage.service.ILinkPlayService;
 import com.tera.homepage.service.IMediaAssetService;
 import com.tera.homepage.service.IMediaService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
-import com.tera.homepage.model.Item;
-import com.tera.homepage.service.ElasticsearchIndexService;
-import com.tera.homepage.service.SearchService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -26,6 +14,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("api/consumer")
+@CrossOrigin
 public class ConsumerController {
 
     @Autowired
@@ -49,5 +38,7 @@ public class ConsumerController {
         this.linkPlayService.createNewLinkPlay(inputItem);
         return new ResponseEntity<>(HttpStatus.OK);
     }
+
+
 
 }

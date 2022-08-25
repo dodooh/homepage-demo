@@ -13,7 +13,7 @@ Content-Type: application/json
       "thumbnailUrl": "sample.com/thumbnailUrl.png"
     },
     "startTime": "2022-08-20T01:00:00.001",
-    "expiredTime": "2022-08-25T01:00:00.001",
+    "expiredTime": "2022-08-24T01:00:00.001",
     "linkPlay": [
       {
         "id": 9001,

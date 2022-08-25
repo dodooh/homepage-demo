@@ -30,5 +30,5 @@ CREATE TABLE items
     directors    LIST<TEXT>,
     players      LIST<TEXT>,
     channel_id   INT,
-    PRIMARY KEY((id,media_type),start_time,expired_time)
-) WITH CLUSTERING ORDER BY (start_time DESC , expired_time ASC);
+    PRIMARY KEY((id,media_type))
+);

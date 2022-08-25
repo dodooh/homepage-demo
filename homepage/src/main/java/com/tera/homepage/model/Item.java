@@ -19,16 +19,16 @@ import java.util.List;
 @Setter
 @Table("items")
 public class Item {
-    @PrimaryKeyColumn(value = "id",type = PrimaryKeyType.PARTITIONED)
+    @PrimaryKeyColumn(value = "id", type = PrimaryKeyType.PARTITIONED)
     private Integer id;
 
-    @PrimaryKeyColumn(value = "media_type",type = PrimaryKeyType.PARTITIONED)
+    @PrimaryKeyColumn(value = "media_type", type = PrimaryKeyType.PARTITIONED)
     private MediaType mediaType;
 
-    @PrimaryKeyColumn(value = "start_time",ordinal = 0, ordering = Ordering.DESCENDING)
+    @Column("start_time")
     private LocalDateTime startTime;
 
-    @PrimaryKeyColumn(value = "expired_time",ordinal = 1, ordering = Ordering.ASCENDING)
+    @Column("expired_time")
     private LocalDateTime expiredTime;
 
     @Column("title")
