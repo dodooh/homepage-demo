@@ -92,6 +92,7 @@ public class ElasticsearchIndexRepositoryImpl implements ElasticsearchIndexRepos
         List<Media> result = new ArrayList<>();
         SearchRequest request = SearchRequest.of(s -> s
                 .index(INDEX)
+                .size(100)
                 .query(q -> q
                         .bool(b -> b
                                 .filter(ft -> ft
